@@ -1,0 +1,95 @@
+body{
+    background-color: hsl(218, 23%, 16%);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.painel{
+    display: flex;
+    flex-direction: column;
+    width: 540px;
+    height: 325px;
+    background-color: hsl(217, 19%, 24%);
+    align-items: center;
+    border-radius: 15px;
+}
+
+h1{
+    font-family: 'Manrope', sans-serif;
+    color: hsl(150, 100%, 66%);
+    margin-top: 30px;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+
+.texto{
+    color: hsl(193, 38%, 86%);
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+button{
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    width: 60px;
+    height: 100px;
+    border-radius: 90px;
+    position: relative;
+    top: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.imagem{
+    width: 25px;
+}
+
+button:hover{
+    box-shadow: 0 0 30px hsl(150, 100%, 66%);
+}
+
+@media (max-width:495px){
+    .painel{
+        display: flex;
+        flex-direction: column;
+        width: 340px;
+        height: 315px;
+        background-color: hsl(217, 19%, 24%);
+        align-items: center;
+        border-radius: 15px;
+    }
+
+    h1{
+        margin-top: 40px;
+    }
+
+    .texto{
+        color: hsl(193, 38%, 86%);
+        font-family: 'Manrope', sans-serif;
+        font-weight: 800;
+        font-size: 24px;
+        margin: 10px;
+        text-align: center;
+    }
+
+    button{
+        background-color: hsl(150, 100%, 66%);
+        border: none;
+        width: 60px;
+        height: 60px;
+        border-radius: 90px;
+        position: relative;
+        top: 40px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
